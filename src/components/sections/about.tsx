@@ -15,7 +15,7 @@ export function AboutSection() {
           <ArrowLink href="#contact" className="button button-light">Talk with our team</ArrowLink>
         </Reveal>
         <Reveal className="about-image" delay={0.12}>
-          <Image src="/images/source/lara-brook-front-of-house.jpg" alt="A Houston home managed by TRAMCO" fill sizes="(max-width: 860px) 100vw, 50vw" />
+          <Image src="/images/enhanced/lara-brook-front-of-house.jpg" alt="A Houston home managed by TRAMCO" fill sizes="(max-width: 860px) 100vw, 50vw" />
         </Reveal>
       </div>
     </section>

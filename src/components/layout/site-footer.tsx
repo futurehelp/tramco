@@ -6,8 +6,9 @@ export function SiteFooter() {
   return (
     <footer className="site-footer" id="contact">
       <div className="footer-main">
-        <div className="footer-brand">
-          <Image src="/images/source/logo-modern.png" width={1200} height={349} alt="TRAMCO Texas Realty and Management Company" />
+        <div className="footer-intro">
+          <p className="eyebrow eyebrow-light">HOUSTON SINCE 1979</p>
+          <h2>Real estate<br /><em>with staying power.</em></h2>
           <p>Consistency. Expertise. Longevity.</p>
         </div>
         <div className="footer-column">
@@ -26,9 +27,12 @@ export function SiteFooter() {
           <a href="#top">Back to top ↑</a>
         </div>
       </div>
-      <div className="footer-bottom">
-        <span>© 2026 TRAMCO</span>
-        <Image src="/images/source/regulatory-mark.png" width={1600} height={606} alt="REALTOR, MLS, and equal housing opportunity" />
+      <div className="footer-white">
+        <Image className="footer-lockup" src="/images/source/logo-modern.png" width={1200} height={349} alt="TRAMCO Texas Realty and Management Company" />
+        <div className="footer-legal">
+          <span>© 2026 TRAMCO</span>
+          <Image src="/images/source/regulatory-mark.png" width={1600} height={606} alt="REALTOR, MLS, and equal housing opportunity" />
+        </div>
       </div>
     </footer>
   );
