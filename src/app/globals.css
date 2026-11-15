@@ -98,9 +98,9 @@ h3 { font-size: 1.45rem; line-height: 1; margin-bottom: 14px; }
 
 .search-section { background: var(--ink); color: var(--white); min-height: 550px; overflow: hidden; position: relative; }
 .search-section::before { background: url("/images/source/short-path-driveway-overlay.png") center / cover; content: ""; filter: brightness(1.03) contrast(1.12) saturate(1.08); inset: 0; opacity: 1; position: absolute; }
-.search-overlay { background: linear-gradient(90deg, rgba(24, 18, 20, .05), rgba(24, 18, 20, .02) 62%, rgba(24, 18, 20, .005)); inset: 0; position: absolute; }
+.search-overlay { background: linear-gradient(90deg, rgba(24, 18, 20, .14), rgba(24, 18, 20, .05) 62%, rgba(24, 18, 20, .015)); inset: 0; position: absolute; }
 .search-content { padding-bottom: 110px; padding-top: 110px; position: relative; }
-.search-content h2 { font-size: clamp(4.2rem, 8vw, 8.8rem); max-width: 720px; text-shadow: 0 2px 18px rgba(24,18,20,.22); }
+.search-content h2 { font-size: clamp(4.2rem, 8vw, 8.8rem); max-width: 720px; text-shadow: 0 3px 24px rgba(24,18,20,.34); }
 
 .testimonials-section { background: var(--white); }
 .testimonials-section h2 { margin-bottom: 66px; }
