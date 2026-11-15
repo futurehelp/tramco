@@ -3,7 +3,7 @@ import { MotionProvider } from "@/components/motion";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tramco.vercel.app"),
+  metadataBase: new URL("https://tramco-realty.vercel.app"),
   title: "TRAMCO | Houston Real Estate and Property Management",
   description:
     "Texas Realty and Management Company has served the greater Houston area with real estate and property management expertise since 1979.",
