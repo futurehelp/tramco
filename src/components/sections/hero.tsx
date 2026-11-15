@@ -27,12 +27,19 @@ export function HeroSection() {
             <Image src={slide.image} alt={`${slide.eyebrow.toLowerCase()} at TRAMCO`} fill priority={activeSlide === 0} sizes="(max-width: 760px) calc(100vw - 40px), 1240px" />
           </motion.div>
         </AnimatePresence>
+        <AnimatePresence mode="wait">
+          <motion.div className="hero-copy" key={slide.title} initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -12 }} transition={{ duration: 0.45, ease: "easeOut" }}>
+            <p className="eyebrow eyebrow-light">{slide.eyebrow}</p>
+            <h1>{slide.title}</h1>
+            <p className="hero-description">{slide.description}</p>
+          </motion.div>
+        </AnimatePresence>
       </div>
       <div className="container hero-rail">
         <AnimatePresence mode="wait">
           <motion.div className="hero-note" key={slide.title} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.35 }}>
             <span className="hero-index">0{activeSlide + 1}</span>
-            <p>{slide.description}</p>
+            <p>Consistency, expertise, and longevity across Houston real estate.</p>
             <ArrowLink href={slide.href} className="hero-link">{slide.cta}</ArrowLink>
           </motion.div>
         </AnimatePresence>

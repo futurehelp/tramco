@@ -25,6 +25,7 @@ export type Testimonial = {
   quote: string;
   author: string;
   detail: string;
+  image: string;
 };
 
 export const navigation: NavItem[] = [
@@ -60,33 +61,33 @@ export const navigation: NavItem[] = [
 export const heroSlides: HeroSlide[] = [
   {
     eyebrow: "PROPERTY MANAGEMENT",
-    title: "Steady hands for every property.",
-    description: "Personalized management for owners and tenants throughout Houston and the surrounding areas.",
-    image: "/images/enhanced/slider-property-management.png",
+    title: "Property Management",
+    description: "Providing Top-Notch Service for Over 40 Years",
+    image: "/images/enhanced/hero-modern-1.jpg",
     href: "#management",
     cta: "Explore management",
   },
   {
     eyebrow: "BUYING A HOME",
-    title: "Find the place that feels like home.",
-    description: "Licensed agents who listen closely, guide clearly, and help you move with confidence.",
-    image: "/images/enhanced/slider-buying-a-home.png",
+    title: "Buying a Home?",
+    description: "Let TRAMCO Find Your Perfect Dream Home Today!",
+    image: "/images/enhanced/hero-modern-2.jpg",
     href: "#real-estate",
     cta: "Start your search",
   },
   {
     eyebrow: "SELLING YOUR HOME",
-    title: "A better way to move forward.",
-    description: "Market your most valuable asset with experienced representation and practical guidance at every step.",
-    image: "/images/enhanced/slider-selling-your-home.png",
+    title: "Selling Your Home?",
+    description: "You Are in Good Hands",
+    image: "/images/enhanced/hero-modern-3.jpg",
     href: "#real-estate",
     cta: "Talk with an agent",
   },
   {
     eyebrow: "INDUSTRY EXPERTS",
-    title: "Experience that works for you.",
-    description: "More than four decades of Houston real estate knowledge, delivered with service that puts clients first.",
-    image: "/images/enhanced/slider-industry-experts.png",
+    title: "Industry Experts",
+    description: "Over 40 Years of Real Estate Experience",
+    image: "/images/enhanced/hero-modern-4.jpg",
     href: "#about",
     cta: "Meet the team",
   },
@@ -128,20 +129,24 @@ export const testimonials: Testimonial[] = [
     quote: "TRAMCO turned a rental property that was losing money into a profitable venture. Their communication, transparency, and expert guidance have taken the stress out of being a landlord.",
     author: "Jeff B.",
     detail: "4 year valued client",
+    image: "/images/enhanced/testimonial-jeff.png",
   },
   {
     quote: "As a remote investor, I needed a company I could trust to manage my properties. TRAMCO lives up to that expectation every day with professional, courteous, and dependable service.",
     author: "John D.",
     detail: "30+ year valued client",
+    image: "/images/enhanced/testimonial-john.png",
   },
   {
     quote: "The team handles every detail, from rental paperwork and payments to repairs and monthly statements. TRAMCO is the go-to property management company in Houston.",
     author: "The D. Family",
     detail: "1 year valued client",
+    image: "/images/enhanced/testimonial-family.png",
   },
   {
     quote: "Our properties have been managed by TRAMCO for more than 30 years. The staff is courteous, efficient, and always ready with practical solutions.",
     author: "HBR & RMR",
     detail: "30+ year valued client",
+    image: "/images/enhanced/testimonial-hbr-rmr.png",
   },
 ];

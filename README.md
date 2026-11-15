@@ -5,13 +5,16 @@ A clean, responsive homepage modernization for Texas Realty and Management Compa
 ## What is included
 
 - Native Next.js 16 App Router with a `src/` project layout
-- Original TRAMCO logo, hero slides, service images, background, and footer assets stored locally
+- Original TRAMCO logo, service images, background, and footer assets stored locally
+- Modern hero photography and four distinct representative testimonial portraits in `public/images/enhanced`
 - Responsive navigation with Framer Motion dropdowns and a mobile menu
 - Motion-enabled hero carousel with autoplay, pagination, and directional controls
 - Interactive service cards, testimonial carousel, and contact form state
 - Responsive layouts for phones, tablets, and desktop screens
 - No iframe and no dependency on the WordPress frontend at runtime
 - Metadata, Open Graph defaults, local favicon, and semantic landmarks
+
+The testimonial portraits are representative visual placeholders created for the modernization. Replace them with client-approved photography before a production launch.
 
 ## Architecture
 
@@ -30,10 +33,11 @@ flowchart TD
   Content --> Hero
   Content --> Services
   Content --> Testimonials
-  Assets[public/images/source] --> Hero
-  Assets --> Services
-  Assets --> About
-  Assets --> Footer
+  SourceAssets[public/images/source] --> Services
+  SourceAssets --> About
+  SourceAssets --> Footer
+  EnhancedAssets[public/images/enhanced] --> Hero
+  EnhancedAssets --> Testimonials
 ```
 
 ## Interaction model

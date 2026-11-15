@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TRAMCO | Houston Real Estate and Property Management",
     description: "Consistency. Expertise. Longevity.",
-    images: ["/images/enhanced/slider-property-management.png"],
+    images: ["/images/enhanced/hero-modern-1.jpg"],
   },
 };
 

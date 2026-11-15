@@ -18,7 +18,7 @@ export function TestimonialsSection() {
         <Reveal><p className="eyebrow">CLIENT EXPERIENCES</p><h2>Trusted by people<br /><em>who stay for the long run.</em></h2></Reveal>
         <Reveal className="testimonial-card" delay={0.1}>
           <div className="testimonial-sidebar">
-            <div className="testimonial-avatar" aria-hidden="true"><Image className="testimonial-avatar-image" src="/images/enhanced/testimonial-avatar.png" width={112} height={112} alt="" sizes="112px" /></div>
+            <div className="testimonial-avatar"><Image className="testimonial-avatar-image" src={item.image} width={112} height={112} alt={`${item.author} representative portrait`} sizes="112px" /></div>
             <p className="eyebrow eyebrow-light">A TRAMCO CLIENT</p>
             <div className="testimonial-person"><div><strong>{item.author}</strong><span>{item.detail}</span></div></div>
           </div>
