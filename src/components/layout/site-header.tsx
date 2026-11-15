@@ -15,7 +15,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <a className="brand" href="#top" aria-label="TRAMCO home">
-        <Image src="/images/source/logo.png" width={381} height={188} alt="TRAMCO" priority />
+        <Image src="/images/source/logo-modern.png" width={1200} height={349} alt="TRAMCO Texas Realty and Management Company" priority />
       </a>
 
       <nav className={mobileOpen ? "site-nav is-open" : "site-nav"} aria-label="Main navigation">

@@ -7,7 +7,7 @@ export function SiteFooter() {
     <footer className="site-footer" id="contact">
       <div className="footer-main">
         <div className="footer-brand">
-          <Image src="/images/source/logo.png" width={381} height={188} alt="TRAMCO" />
+          <Image src="/images/source/logo-modern.png" width={1200} height={349} alt="TRAMCO Texas Realty and Management Company" />
           <p>Consistency. Expertise. Longevity.</p>
         </div>
         <div className="footer-column">

@@ -33,8 +33,8 @@ h3 { font-size: 1.45rem; line-height: 1; margin-bottom: 14px; }
 
 /* The nav uses the compact dark treatment from the M3 reference build. */
 .site-header { align-items: center; background: rgba(23, 21, 24, 0.97); border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 18px; display: flex; gap: 28px; height: 82px; left: 16px; padding: 0 22px; position: sticky; right: 16px; top: 14px; z-index: 40; }
-.brand { align-items: center; display: flex; flex: 0 0 124px; height: 66px; overflow: hidden; }
-.brand img { height: auto; object-fit: contain; width: 124px; }
+.brand { align-items: center; background: var(--white); display: flex; flex: 0 0 184px; height: 61px; overflow: hidden; padding: 6px 10px; }
+.brand img { height: auto; object-fit: contain; width: 100%; }
 .site-nav { align-items: center; display: flex; flex: 1; gap: clamp(17px, 2.7vw, 42px); justify-content: center; }
 .site-nav > a, .nav-trigger { background: transparent; border: 0; color: rgba(255, 255, 255, 0.9); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; padding: 16px 0; text-transform: uppercase; white-space: nowrap; }
 .nav-trigger { align-items: center; display: inline-flex; gap: 8px; }
@@ -117,7 +117,7 @@ h3 { font-size: 1.45rem; line-height: 1; margin-bottom: 14px; }
 
 .site-footer { background: var(--ink); color: var(--white); padding: 76px 6vw 28px; }
 .footer-main { display: grid; gap: 55px; grid-template-columns: 1.3fr repeat(3, 1fr); margin: 0 auto; max-width: 1240px; }
-.footer-brand img { height: auto; max-width: 160px; width: 160px; }
+.footer-brand img { height: auto; max-width: 230px; width: 230px; }
 .footer-brand p { color: rgba(255,255,255,.62); font-family: var(--serif); font-size: 1.1rem; margin-top: 20px; }
 .footer-column { display: grid; align-content: start; gap: 10px; }
 .footer-column > span { color: #f1c2cd; font-size: .7rem; font-weight: 700; letter-spacing: .16em; margin-bottom: 12px; }
@@ -139,8 +139,7 @@ h3 { font-size: 1.45rem; line-height: 1; margin-bottom: 14px; }
   .container { width: min(100% - 40px, 610px); }
   .section { padding: 88px 0; }
   .site-header { height: 70px; justify-content: space-between; left: 10px; padding-inline: 16px; right: 10px; top: 10px; }
-  .brand { flex-basis: 106px; height: 58px; }
-  .brand img { width: 106px; }
+  .brand { flex-basis: 160px; height: 52px; }
   .button-header { display: none; }
   .menu-toggle { display: block; }
   .site-nav { align-items: stretch; background: var(--ink); border-top: 1px solid rgba(255,255,255,.16); display: none; flex-direction: column; gap: 0; left: -1px; padding: 12px 20px 22px; position: absolute; right: -1px; top: 69px; }
