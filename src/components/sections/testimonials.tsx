@@ -26,7 +26,11 @@ export function TestimonialsSection() {
             <Quote className="quote-mark" size={52} strokeWidth={1.2} aria-hidden="true" />
             <p className="testimonial-quote">“{item.quote}”</p>
           </motion.div>
-          <div className="testimonial-controls"><button type="button" aria-label="Previous testimonial" onClick={() => setActive((active - 1 + testimonials.length) % testimonials.length)}><ChevronLeft size={20} /></button><span>{String(active + 1).padStart(2, "0")} / {String(testimonials.length).padStart(2, "0")}</span><button type="button" aria-label="Next testimonial" onClick={() => setActive((active + 1) % testimonials.length)}><ChevronRight size={20} /></button></div>
+          <div className="testimonial-controls">
+            <motion.button type="button" aria-label="Previous testimonial" onClick={() => setActive((active - 1 + testimonials.length) % testimonials.length)} whileHover={{ x: -2 }} whileTap={{ scale: 0.92 }}><ChevronLeft size={20} /></motion.button>
+            <span>{String(active + 1).padStart(2, "0")} / {String(testimonials.length).padStart(2, "0")}</span>
+            <motion.button type="button" aria-label="Next testimonial" onClick={() => setActive((active + 1) % testimonials.length)} whileHover={{ x: 2 }} whileTap={{ scale: 0.92 }}><ChevronRight size={20} /></motion.button>
+          </div>
         </Reveal>
       </div>
     </section>
