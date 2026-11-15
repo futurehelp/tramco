@@ -63,12 +63,17 @@ h3 { font-size: 1.45rem; line-height: 1; margin-bottom: 14px; }
 .hero-index { color: #f1c2cd; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; }
 .hero-note p { color: rgba(255, 255, 255, 0.68); font-size: 0.9rem; margin: 0; max-width: 620px; }
 .hero-link { align-items: center; color: #f1c2cd; display: inline-flex; font-size: 0.68rem; font-weight: 700; gap: 8px; letter-spacing: 0.12em; margin-left: auto; text-transform: uppercase; white-space: nowrap; }
-.hero-controls { align-items: center; display: flex; gap: 15px; }
-.hero-controls button { align-items: center; background: transparent; border: 0; color: var(--white); display: flex; height: 32px; justify-content: center; padding: 0; width: 32px; }
-.hero-controls button:first-child { border-left: 1px solid rgba(255,255,255,.25); padding-left: 12px; width: 44px; }
-.hero-dots { display: flex; gap: 6px; }
-.hero-dots button { background: rgba(255, 255, 255, 0.36); border: 0; height: 2px; padding: 0; transition: background .2s, width .2s; width: 20px; }
-.hero-dots button.is-active { background: #f1c2cd; width: 34px; }
+.slider-controls { align-items: center; display: flex; gap: 21px; min-width: 310px; }
+.slider-counter { align-items: baseline; display: flex; font-variant-numeric: tabular-nums; gap: 5px; letter-spacing: .12em; white-space: nowrap; }
+.slider-counter-current { color: var(--white); font-size: .76rem; font-weight: 700; }
+.slider-counter-total { color: rgba(255,255,255,.44); font-size: .7rem; }
+.slider-progress { align-items: center; display: flex; flex: 1; gap: 4px; }
+.slider-progress button { background: transparent; border: 0; height: 18px; padding: 8px 0; width: 28px; }
+.slider-progress button span { background: rgba(255,255,255,.34); display: block; height: 1px; transform-origin: left center; transition: background .2s; width: 100%; }
+.slider-progress button.is-active span { background: #f1c2cd; }
+.slider-arrows { display: flex; gap: 5px; }
+.slider-arrow { align-items: center; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.25); color: var(--white); display: flex; height: 36px; justify-content: center; transition: background .2s, border-color .2s; width: 36px; }
+.slider-arrow:hover { background: var(--brand); border-color: var(--brand); }
 
 .split-heading { align-items: end; display: grid; gap: 55px; grid-template-columns: minmax(0, 1.1fr) minmax(250px, 0.6fr); margin-bottom: 76px; }
 .section-lede { color: var(--muted); font-size: 1.03rem; max-width: 390px; padding-bottom: 5px; }
@@ -92,8 +97,8 @@ h3 { font-size: 1.45rem; line-height: 1; margin-bottom: 14px; }
 .about-image img { object-fit: cover; }
 
 .search-section { background: var(--ink); color: var(--white); min-height: 550px; overflow: hidden; position: relative; }
-.search-section::before { background: url("/images/source/short-path-driveway-overlay.png") center / cover; content: ""; filter: brightness(1.12) saturate(1.04); inset: 0; opacity: .88; position: absolute; }
-.search-overlay { background: linear-gradient(90deg, rgba(24, 18, 20, .38), rgba(24, 18, 20, .08) 62%, rgba(24, 18, 20, .02)); inset: 0; position: absolute; }
+.search-section::before { background: url("/images/source/short-path-driveway-overlay.png") center / cover; content: ""; filter: brightness(1.12) saturate(1.04); inset: 0; opacity: 1; position: absolute; }
+.search-overlay { background: linear-gradient(90deg, rgba(24, 18, 20, .1), rgba(24, 18, 20, .04) 62%, rgba(24, 18, 20, .01)); inset: 0; position: absolute; }
 .search-content { padding-bottom: 110px; padding-top: 110px; position: relative; }
 .search-content h2 { font-size: clamp(4.2rem, 8vw, 8.8rem); max-width: 720px; }
 
@@ -176,7 +181,7 @@ h3 { font-size: 1.45rem; line-height: 1; margin-bottom: 14px; }
   .hero-note { align-items: flex-start; display: grid; gap: 8px 12px; grid-template-columns: auto 1fr; }
   .hero-note p { grid-column: 2; }
   .hero-link { grid-column: 2; margin-left: 0; }
-  .hero-controls { align-self: flex-end; }
+  .slider-controls { align-self: stretch; min-width: 0; width: 100%; }
   .split-heading, .about-grid, .contact-grid { display: block; }
   .split-heading { margin-bottom: 46px; }
   .section-lede { margin-top: 25px; }

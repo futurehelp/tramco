@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { heroSlides } from "@/lib/site-content";
 import { ArrowLink } from "@/components/ui/arrow-link";
 import { GpuLens } from "@/components/ui/gpu-lens";
+import { SliderControls } from "@/components/ui/slider-controls";
 
 /** Full width hero that preserves the original four-slide story without the WordPress slider runtime. */
 export function HeroSection() {
@@ -43,13 +43,14 @@ export function HeroSection() {
             <ArrowLink href={slide.href} className="hero-link">{slide.cta}</ArrowLink>
           </motion.div>
         </AnimatePresence>
-        <div className="hero-controls" aria-label="Hero slide controls">
-          <motion.button type="button" aria-label="Previous slide" onClick={() => setActiveSlide((activeSlide - 1 + heroSlides.length) % heroSlides.length)} whileHover={{ x: -3 }} whileTap={{ scale: 0.92 }}><ChevronLeft size={19} /></motion.button>
-          <div className="hero-dots">
-            {heroSlides.map((item, index) => <motion.button key={item.title} type="button" aria-label={`Show ${item.eyebrow.toLowerCase()}`} className={index === activeSlide ? "is-active" : ""} onClick={() => setActiveSlide(index)} whileHover={{ scaleX: 1.35 }} />)}
-          </div>
-          <motion.button type="button" aria-label="Next slide" onClick={() => setActiveSlide((activeSlide + 1) % heroSlides.length)} whileHover={{ x: 3 }} whileTap={{ scale: 0.92 }}><ChevronRight size={19} /></motion.button>
-        </div>
+        <SliderControls
+          activeIndex={activeSlide}
+          total={heroSlides.length}
+          onPrevious={() => setActiveSlide((activeSlide - 1 + heroSlides.length) % heroSlides.length)}
+          onNext={() => setActiveSlide((activeSlide + 1) % heroSlides.length)}
+          onSelect={setActiveSlide}
+          label="Hero slide controls"
+        />
       </div>
     </section>
   );
