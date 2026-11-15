@@ -96,8 +96,8 @@ h3 { font-size: 1.45rem; line-height: 1; margin-bottom: 14px; }
 .testimonials-section h2 { margin-bottom: 66px; }
 .testimonial-card { background: var(--ink); color: var(--white); display: grid; gap: clamp(30px, 6vw, 94px); grid-template-columns: minmax(170px, .32fr) minmax(0, 1fr); min-height: 420px; padding: clamp(30px, 5vw, 70px); position: relative; }
 .testimonial-sidebar { border-right: 1px solid rgba(255,255,255,.18); padding-right: 26px; }
-.testimonial-avatar { margin-bottom: 28px; width: 112px; }
-.testimonial-avatar img { border-radius: 50%; height: 112px; object-fit: cover; width: 112px; }
+.testimonial-avatar { border-radius: 50%; height: clamp(78px, 8vw, 104px); margin-bottom: 28px; max-height: 104px; max-width: 104px; overflow: hidden; width: clamp(78px, 8vw, 104px); }
+.testimonial-avatar-image { display: block; height: 100% !important; max-height: 104px; max-width: 104px; object-fit: cover; width: 100% !important; }
 .testimonial-sidebar .eyebrow { margin-bottom: 15px; }
 .quote-mark { color: #f1c2cd; margin-bottom: 20px; }
 .testimonial-body { align-self: center; padding-bottom: 20px; }
