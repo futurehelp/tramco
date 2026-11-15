@@ -98,7 +98,7 @@ h3 { font-size: 1.45rem; line-height: 1; margin-bottom: 14px; }
 
 .search-section { background: var(--ink); color: var(--white); min-height: 550px; overflow: hidden; position: relative; }
 .search-section::before { background: url("/images/source/short-path-driveway-overlay.png") center / cover; content: ""; filter: brightness(1.12) saturate(1.04); inset: 0; opacity: 1; position: absolute; }
-.search-overlay { background: linear-gradient(90deg, rgba(24, 18, 20, .1), rgba(24, 18, 20, .04) 62%, rgba(24, 18, 20, .01)); inset: 0; position: absolute; }
+.search-overlay { background: linear-gradient(90deg, rgba(24, 18, 20, .05), rgba(24, 18, 20, .02) 62%, rgba(24, 18, 20, .005)); inset: 0; position: absolute; }
 .search-content { padding-bottom: 110px; padding-top: 110px; position: relative; }
 .search-content h2 { font-size: clamp(4.2rem, 8vw, 8.8rem); max-width: 720px; }
 
@@ -115,8 +115,8 @@ h3 { font-size: 1.45rem; line-height: 1; margin-bottom: 14px; }
 .testimonial-person { display: flex; gap: 15px; }
 .testimonial-person strong, .testimonial-person span { display: block; }
 .testimonial-person span { color: var(--muted); font-size: .83rem; margin-top: 3px; }
-.testimonial-controls { align-items: center; backdrop-filter: blur(16px); background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.16); bottom: 34px; display: flex; gap: 9px; padding: 6px; position: absolute; right: 40px; }
-.testimonial-controls button { align-items: center; background: rgba(255,255,255,.1); border: 0; color: var(--white); display: flex; height: 34px; justify-content: center; transition: background .2s, color .2s, transform .2s; width: 34px; }
+.testimonial-controls { align-items: center; bottom: 34px; display: flex; gap: 14px; position: absolute; right: 40px; }
+.testimonial-controls button { align-items: center; background: rgba(255,255,255,.1); border: 0; border-radius: 50%; color: var(--white); display: flex; height: 40px; justify-content: center; transition: background .2s, color .2s, transform .2s; width: 40px; }
 .testimonial-controls button:hover { background: var(--brand); color: var(--white); }
 .testimonial-controls span { color: rgba(255,255,255,.58); font-size: .68rem; font-variant-numeric: tabular-nums; letter-spacing: .12em; min-width: 48px; text-align: center; }
 
