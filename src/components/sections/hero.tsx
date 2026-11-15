@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { heroSlides } from "@/lib/site-content";
 import { ArrowLink } from "@/components/ui/arrow-link";
+import { GpuLens } from "@/components/ui/gpu-lens";
 
 /** Full width hero that preserves the original four-slide story without the WordPress slider runtime. */
 export function HeroSection() {
@@ -19,6 +20,7 @@ export function HeroSection() {
 
   return (
     <section className="hero" id="top" aria-label="TRAMCO services">
+      <GpuLens />
       <div className="container hero-stage">
         <AnimatePresence mode="wait">
           <motion.div key={slide.image} className="hero-image" initial={{ opacity: 0, scale: 1.018 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.65 }}>

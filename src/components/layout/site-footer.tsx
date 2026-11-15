@@ -28,7 +28,7 @@ export function SiteFooter() {
       </div>
       <div className="footer-bottom">
         <span>© 2026 TRAMCO</span>
-        <Image src="/images/source/realtor-equal-housing.png" width={300} height={126} alt="REALTOR and equal housing opportunity" />
+        <Image src="/images/source/regulatory-mark.png" width={1600} height={606} alt="REALTOR, MLS, and equal housing opportunity" />
       </div>
     </footer>
   );
